@@ -14,6 +14,7 @@ const today = new Date().toLocaleDateString(undefined, {
 export default function App() {
   const [todos, setTodos] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [filter, setFilter] = useState('all');
 
   useEffect(() => {
     fetchTodos()
